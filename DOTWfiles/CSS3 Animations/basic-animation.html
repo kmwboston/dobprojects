@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="keywords" content="">
+		<meta charset="utf-8">
+
+		<title>Basic Animation</title>
+		<style>
+			/*binding animation to the square class*/
+			.square {
+				width: 300px;
+				height: 300px;
+				background: red;
+				position: relative;
+				/*animation-name:colors;
+				-webkit-animation-name:colors;
+				animation-duration: 5s;
+				-webkit-animation-duration: 5s;*/
+				/*--------------------
+				quick version
+				----------------------*/
+				animation: colors 5s;
+				-webkit-animation: colors 5s;
+
+				/*loops animation*/
+				animation-iteration-count:infinite;
+				-webkit-animation-iteration-count:infinite;
+				/*infinite iteration, just say "infinite" for count*/
+			}
+
+
+
+			}
+			/*declare term and create starting point and ending point
+			/*keyframes works over percentages 0-100% that resemble each stage of frame*/
+			/*--------------------------*/
+			/*@keyframes colors {
+				from {background: red;}
+				to {background: blue;}
+			}*/
+
+			/*here we animate from the top left corner*/
+			/*----------------------------
+
+	*/		/*@keyframes colors {
+				0% {background:red; left: 0px; top: 0px;}
+				33% {background:blue;}
+				66% {background:green;}
+				100% {background:red;}
+			}*/
+
+				/*	@-webkit-keyframes colors {
+				0% {background:red;}
+				33% {background:blue;}
+				66% {background:green;}
+				100% {background:red;}
+			}*/
+
+			@keyframes colors {
+				0% {background:red; left: 0px; top: 0px;}
+				33% {background:blue; left: 300px; top:0px;}
+				66% {background:green; left: 300px; top:300px;}
+				100% {background:red; left:0px; top:0px;}
+			}
+
+			@-webkit-keyframes colors {
+				0% {background:red; left: 0px; top: 0px;}
+				33% {background:blue; left: 300px; top:0px;}
+				66% {background:green; left: 300px; top:300px;}
+				100% {background:red; left:0px; top:0px;}
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+		<div class="square">
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+git commands (unix)
+
+-make directory
+if created directory from scratch, we must initialize to make it a git repository (locally)
+-git init
+initializes as repository
+-touch README.md
+this will create a new blank file called "README.MD"
+-------------------
+markdown syntax
+-------------------
+
+Spring Break 2014 
+================= (creates underlined h3)
+
+(spaces = at least 1 new line in between)
+
+This is mmy spring break project repository (normal text)
+
+>who needs sun when you have pixels? (indent block of text)
+
+[Drawing on the Web](Input link URL HERE) -how to do a link-
+
+-----------------------------
+back to terminal git commands
+-----------------------------
+committing:
+
+a snap shot of your files as they are, at a point in time, before they are manipulated
+*first step is to add the files to tell git knows what to commit
+*second step we have to sync them back up to the server (called a 'push')
+
+1.ADD
+2.COMMIT
+3.PUSH
+
+-git add README.md
+adding the files we want to commit
+-git commit -m 'Adding README'
+the -m is a message, we must add the messege for it to be committed
+-git remote add origin 'complete url here'
+this links what you've done locally to the repository online (but doesn't actually send it)
+-git remote -v
+gives validation about what you've done (will show the fetch and push)
+-git push origin master
+this actually puts the linked repository on the web (github.com)
+
+lets do the process again:
+-git add README.md
+-git commit -m 'Changing README'4:18 PM 3/5/2014/
+-git push origin master
+
+TO FORK:
+take link of what you want to fork
+-git clone (url).git *INCLUDE .git
+clones file
+-cd SPoon-Knife
+check if you're in the right place
+-git add index.html
+adds the changes you made to the html
+-git commit -m "changing web page title"
+now it commits it to the github repository
+-git push origin master
+uploads to github
+
+
+
+
